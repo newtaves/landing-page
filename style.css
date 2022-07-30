@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.continer{
+  height: 450px;
+  width: 600px;
+  display: flex;
+  margin:10% auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+.product{
+  height: 450px;
+  width: auto;
+  border-radius: 10px     0      0        10px;
+}
+.description{
+  padding: 20px;
+}
+.monospace{
+  font-family: monospace;
+  color: hsl(228, 12%, 48%);
+}
+h3{
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.flexprice{
+  display: flex;
+}
+.strike{
+  font-size: 14px;
+}
+.price{
+  color: #45866e;
+}
+button{
+  background: #3d8168;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+}
+button:hover{
+  background-color: #184031;
+}
+@media(max-width:375px){
+  .product>img{
+    content:url(images/image-product-mobile.jpg);
+    width: 350px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px 10px 0 0 ;
+  }
+  .continer{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 0;
+    width: 350px;
+    height: 800px;
+  }
+}
